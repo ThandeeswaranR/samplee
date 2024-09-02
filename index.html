@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        
+    }
+    /* .test-main {
+        display: flex;
+        flex-direction: row;
+    }
+    .test-leftpanel {
+        width: 300px;
+        background: black;
+        height: 100vh;
+        color: #fff;
+    }
+    .test-preview {
+        width: calc(100vw - 300px);
+    }
+    .system-btn{
+        margin-top: 25px;
+        border: 2px;
+        font-size: 20px;
+    }
+    .system-btn :hover{
+        color: aqua;
+    }
+    .test-pages {
+        display: none;
+        
+    }
+    .test-add{
+        line-height: 30px;
+        color: white;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 45px;
+        background-color: cadetblue;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        text-align: center;
+        border-bottom: 1 px solid rgba(255,255,255,0.1);
+    }
+    .test-view{
+        line-height: 30px;
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 45px;
+        background-color: cadetblue;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .test-pages.show {
+        display: block;
+    } */
+
+    
+   </style>
+</head>
+<body>
+
+
+    <div class="test-main">
+        <!-- Left panel -->
+        <div class="test-leftpanel">
+            <!-- <p>Dashboard</p> -->
+            <ul>
+                <li class="system-btn">
+                    <p>System / Hardware Failure 
+                        <span class="fas fa-caret-down first"></span>
+                    </p>
+                    <ul class="test-pages">
+                        <li class="test-add">Add</li>
+                        <li class="test-view">View</li>
+                    </ul>
+                </li>
+            </ul>
+    
+        </div>
+
+        <!-- Preview area -->
+        <div class="test-preview">
+            <iframe src="url" title="description" id="loadhtml" height="100%" width="100%"></iframe> 
+        </div>
+    </div>
+
+</body>
+
+
+<script>
+    $(document).ready(function(){
+    $(".system-btn > p").click(function(){
+        $(".test-pages").toggleClass("show");
+    });
+
+    $(".test-add").click(function(){
+        $('#loadhtml').attr('src', 'file:///D:/Dashboard%20Ninja/Add.html');
+    });
+    $(".test-view").click(function(){
+        $('#loadhtml').attr('src', 'file:///D:/Dashboard%20Ninja/View.html');
+    });
+    });
+</script>
+</html>

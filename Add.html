@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+
+     table {
+        border-collapse: collapse;
+        width: 800px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 5px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+    #no{
+        width: 45px;
+    }
+    #btn {
+        width: 195px;
+        height: 45px;
+        font-size: 18px;
+        background-color: yellow;
+        border-radius: 6px;
+        margin-left: 605px;
+        margin-top:25px  ;
+    }
+
+   
+    </style>
+</head>
+<body>
+     
+    
+    
+    <table id="myTable">
+        <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>issue
+                <select>
+                    
+                </select>
+            </th>
+            <th>Description of issue</th>
+        
+        </tr>
+        <tr>
+            <td> <input type="number" id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"></td>
+            <td> <input type="text"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"></td> 
+        </tr>
+       
+    </table>
+
+    
+     
+
+     <input type="button" id="btn" value="Raise Ticket">
+   
+   
+    
+</body>
+<script>
+    $("#btn").click(function(){
+      
+      $('#myTable').append('<tr><td> <input type="number"id="no"></td> <td> <input type="date"></td><td> <input type="text"></td> <td><select><option value=""></option><option value="CPU">CPU</option> <option value="Monitor">Monitor</option> <option value="Keyboard">Keyboard</option> <option value="Mouse">Mouse</option> <option value="Ups">Ups</option> <option value="Motherboard">Motherboard</option> <option value="Smps">Smps</option> <option value="Hard Disk">Hard Disk</option> <option value="Ram">RAM</option> <option value="Lithium Battery">Lithium Battery</option> <option value="Os Currepted">Os Currepted</option> <option value="Audio Socket">Audio Socket</option> <option value="Audio Jack">Audio Jack</option> <option value="Others">others</option></select></td> <td><input type="text"></td> /tr>');
+  });
+ </script>
+</html>

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View</title>
+    <style>
+       body{
+        overflow-y: auto;
+       }
+        table {
+           border-collapse:  collapse;
+           /* width: 850px; */
+       }
+   
+       th, td {
+           border: 1px solid #ddd;
+           padding: 5px;
+           text-align: left;
+       }
+   
+       th {
+           background-color: #f2f2f2;
+       }
+       #no{
+        width: 35px;
+       }
+       #dt{
+        width: 94px;
+       }
+       #map{
+        width: 122px;
+       }
+       #drr{
+        width: 135px;
+       }
+      
+       </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th >No</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Issue</th>
+            <th>Description</th>
+            <th>Repaired</th>
+            <th>Replaced</th>
+            <th>Upload Bill</th>
+            <th>Warrenty period</th>
+            <th>Approved By</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td> <input type="number" id="no"></td> 
+            <td> <input type="date" id="dt"></td>
+            <td> <input type="text" id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="number"id="no"></td> 
+            <td> <input type="date"id="dt"></td>
+            <td> <input type="text"id="map"></td> 
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="CPU">CPU</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Ups">Ups</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="Smps">Smps</option>
+                    <option value="Hard Disk">Hard Disk</option>
+                    <option value="Ram">RAM</option>
+                    <option value="Lithium Battery">Lithium Battery</option>
+                    <option value="Os Currepted">Os Currepted</option>
+                    <option value="Audio Socket">Audio Socket</option>
+                    <option value="Audio Jack">Audio Jack</option>
+                    <option value="Others">others</option>
+                </select>
+            </td> 
+            <td><input type="text"id="drr"></td> 
+            <td><input type="text"id="drr"></td>
+            <td><input type="text"id="drr"></td>
+            <td><input type="file"></td>
+            <td>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </td>
+            <td><input type="text"></td>
+            <td>
+            <select>
+                <option value="Yes">Sloved</option>
+                <option value="No">Pending</option>
+            </select>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
